@@ -1,607 +1,422 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <link rel="stylesheet" href="https://silverhawk.web.id/lock/lock.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Hafinzah Fotocopy - layanan fotocopy, print, scan, jilid, laminating dan ATK.">
-
-    <title>Hafinzah Fotocopy | Cetak Cepat, Hasil Berkualitas</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hafinzah Fotocopy - layanan fotocopy, print, scan, jilid, laminating dan ATK. Hubungi 0812-9671-2644.">
+  <title>Hafinzah Fotocopy | Selamat Datang</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2318a96e'/%3E%3Crect x='14' y='22' width='36' height='26' rx='4' fill='%23fff'/%3E%3Cpath d='M20 22V16c0-2 1.8-4 4-4h16c2.2 0 4 1.8 4 4v6' fill='none' stroke='%23fff' stroke-width='3.5'/%3E%3Crect x='20' y='34' width='24' height='10' rx='1.5' fill='%2318a96e'/%3E%3C/svg%3E" type="image/svg+xml">
+  <meta name="theme-color" content="#18a96e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<body data-shlock-mode="ultimate" data-shlock-domain="" data-shlock-brand="hafinzah fotocopyy" data-shlock-social="https://WWW.tiktok.com/apichh">
 
-<!-- ================= NAVBAR ================= -->
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-card">
+      <div class="welcome-logo">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect width="48" height="48" rx="14" fill="#18a96e"/>
+          <rect x="10" y="16" width="28" height="20" rx="3.5" fill="#fff"/>
+          <path d="M14 16V11.5c0-1.9 1.5-3.5 3.5-3.5h13c1.9 0 3.5 1.6 3.5 3.5V16" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="14.5" y="25" width="19" height="8" rx="1.5" fill="#18a96e"/>
+          <path d="M17 28h13.5M17 31h9" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="33" cy="20.5" r="1.8" fill="#18a96e"/>
+        </svg>
+      </div>
+      <p class="welcome-eyebrow">SELAMAT DATANG</p>
+      <h2>Hafinzah <span>Fotocopy</span></h2>
+      <p class="welcome-text">Cetak cepat, hasil berkualitas. Siap melayani sekolah, kantor, dan usaha Anda.</p>
+      <a class="welcome-phone" href="https://wa.me/6281296712644" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> 0812-9671-2644
+      </a>
+      <button type="button" class="btn primary" id="welcomeEnter">Masuk ke Website <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
 
-<header class="header">
-
+  <header class="header" id="header">
     <div class="logo">
-        <div class="logo-icon">
-            <i class="fa-solid fa-print"></i>
-        </div>
-
-        <div>
-            <h2>Hafinzah<span>Fotocopy</span></h2>
-            <small>Print • Copy • Create</small>
-        </div>
+      <div class="logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none">
+          <rect x="10" y="16" width="28" height="20" rx="3.5" fill="#fff"/>
+          <path d="M14 16V11.5c0-1.9 1.5-3.5 3.5-3.5h13c1.9 0 3.5 1.6 3.5 3.5V16" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="14.5" y="25" width="19" height="8" rx="1.5" class="logo-paper"/>
+          <path d="M17 28h13.5M17 31h9" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="33" cy="20.5" r="1.8" class="logo-btn"/>
+        </svg>
+      </div>
+      <div>
+        <h2>Hafinzah<span>Fotocopy</span></h2>
+        <small>Print • Copy • Create</small>
+      </div>
     </div>
 
     <nav class="navbar" id="navbar">
-
-        <a href="#home" class="active">Home</a>
-        <a href="#about">Tentang</a>
-        <a href="#services">Layanan</a>
-        <a href="#why">Keunggulan</a>
-        <a href="#contact">Kontak</a>
-
+      <a href="#home" class="active">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#services">Layanan</a>
+      <a href="#prices">Harga</a>
+      <a href="#tools">Hitung &amp; Order</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#testimonials">Testimoni</a>
+      <a href="#contact">Kontak</a>
     </nav>
 
-    <a href="#contact" class="nav-button">
-        Hubungi Kami
-        <i class="fa-solid fa-arrow-right"></i>
+    <a href="https://wa.me/6281296712644" target="_blank" rel="noopener" class="nav-button">
+      Hubungi Kami <i class="fa-solid fa-arrow-right"></i>
     </a>
 
-    <button class="menu-button" id="menuButton">
-        <i class="fa-solid fa-bars"></i>
+    <button class="menu-button" id="menuButton" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
     </button>
+  </header>
 
-</header>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-    <div class="hero-content reveal">
-
-        <span class="badge">
-            <i class="fa-solid fa-sparkles"></i>
-            SOLUSI CETAK TERPERCAYA
-        </span>
-
-        <h1>
-            Cetak Cepat,
-            <span>Hasil Berkualitas.</span>
-        </h1>
-
-        <p>
-            Solusi fotocopy, print, scan, laminating, jilid,
-            dan ATK dengan pelayanan cepat, ramah,
-            serta harga bersahabat.
-        </p>
-
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <span class="badge"><i class="fa-solid fa-sparkles"></i> SELAMAT DATANG</span>
+        <h1>Selamat Datang di<br><span>Hafinzah Fotocopy.</span></h1>
+        <p>Solusi fotocopy, print, scan, laminating, jilid, dan ATK dengan pelayanan cepat, ramah, serta harga bersahabat.</p>
+        <div class="hero-phone-chip">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <strong>0812-9671-2644</strong>
+            <small>Chat / telepon di jam operasional</small>
+          </div>
+        </div>
         <div class="hero-buttons">
-
-            <a href="#services" class="btn primary">
-                Mulai Sekarang
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-            <a href="#about" class="btn secondary">
-                Tentang Kami
-            </a>
-
+          <a href="#services" class="btn primary">Mulai Sekarang <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#gallery" class="btn secondary">Lihat Galeri</a>
         </div>
-
         <div class="hero-info">
-
-            <div class="info-icon">
-                <i class="fa-solid fa-check"></i>
-            </div>
-
-            <div>
-                <strong>Cepat • Rapi • Praktis</strong>
-                <small>Melayani kebutuhan sekolah, kantor & usaha</small>
-            </div>
-
+          <div class="info-icon"><i class="fa-solid fa-check"></i></div>
+          <div>
+            <strong>Cepat • Rapi • Praktis</strong>
+            <small>Melayani sekolah, kantor &amp; usaha</small>
+          </div>
         </div>
-
-    </div>
-
-
-    <!-- HERO IMAGE -->
-
-    <div class="hero-visual reveal">
-
+      </div>
+      <div class="hero-visual reveal">
         <div class="circle-bg"></div>
-
         <div class="image-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80"
-                alt="Mesin printer">
-
-            <div class="image-label">
-
-                <i class="fa-solid fa-print"></i>
-
-                <div>
-                    <strong>Hafinzah Fotocopy</strong>
-                    <small>Professional Printing</small>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="floating-card">
-
-            <i class="fa-solid fa-star"></i>
-
-            <div>
-                <strong>5K+</strong>
-                <small>Pelanggan</small>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= STATS ================= -->
-
-<section class="stats">
-
-    <div class="stat">
-        <i class="fa-solid fa-users"></i>
-
-        <div>
-            <h2>5K+</h2>
-            <p>Pelanggan</p>
-        </div>
-    </div>
-
-    <div class="stat">
-        <i class="fa-solid fa-layer-group"></i>
-
-        <div>
-            <h2>10+</h2>
-            <p>Layanan</p>
-        </div>
-    </div>
-
-    <div class="stat">
-        <i class="fa-solid fa-clock"></i>
-
-        <div>
-            <h2>Fast</h2>
-            <p>Pelayanan</p>
-        </div>
-    </div>
-
-    <div class="stat">
-        <i class="fa-solid fa-heart"></i>
-
-        <div>
-            <h2>100%</h2>
-            <p>Komitmen</p>
-        </div>
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="section about" id="about">
-
-    <div class="about-image reveal">
-
-        <div class="image-wrapper">
-
-            <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=900&q=80"
-                alt="Peralatan kantor">
-
-        </div>
-
-        <div class="experience">
-            <strong>Quality</strong>
-            <span>First</span>
-        </div>
-
-    </div>
-
-
-    <div class="about-content reveal">
-
-        <span class="section-label">
-            01 / TENTANG KAMI
-        </span>
-
-        <h2>
-            Bukan cuma mencetak,
-            <span>kami memudahkan.</span>
-        </h2>
-
-        <p>
-            Hafinzah Fotocopy hadir sebagai solusi untuk
-            berbagai kebutuhan dokumen sehari-hari.
-            Kami mengutamakan pelayanan ramah,
-            proses praktis, dan hasil yang rapi.
-        </p>
-
-        <div class="check-list">
-
-            <div>
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Hasil cetak jelas dan rapi</span>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Banyak layanan dalam satu tempat</span>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Harga bersahabat</span>
-            </div>
-
-        </div>
-
-        <a href="#services" class="text-link">
-            Lihat layanan kami
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= SERVICES ================= -->
-
-<section class="section services" id="services">
-
-    <div class="section-heading reveal">
-
-        <div>
-            <span class="section-label">
-                02 / LAYANAN
+          <img src="images/toko-depan.jpg" alt="Mesin print Hafinzah Fotocopy" loading="eager">
+          <div class="image-label">
+            <span class="mini-logo" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="10" y="16" width="28" height="20" rx="3.5" fill="#fff"/>
+                <path d="M14 16V11.5c0-1.9 1.5-3.5 3.5-3.5h13c1.9 0 3.5 1.6 3.5 3.5V16" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+                <rect x="14.5" y="25" width="19" height="8" rx="1.5" fill="#18a96e"/>
+                <path d="M17 28h13.5M17 31h9" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="33" cy="20.5" r="1.8" fill="#18a96e"/>
+              </svg>
             </span>
-
-            <h2>
-                Semua kebutuhan cetak,
-                <span>ada di sini.</span>
-            </h2>
-        </div>
-
-        <p>
-            Dari dokumen sederhana hingga kebutuhan
-            profesional, kami siap membantu.
-        </p>
-
-    </div>
-
-
-    <div class="service-grid">
-
-        <div class="service-card featured reveal">
-
-            <div class="service-number">01</div>
-
-            <div class="service-icon">
-                <i class="fa-solid fa-copy"></i>
-            </div>
-
-            <h3>Fotocopy</h3>
-
-            <p>
-                Fotocopy hitam putih dan warna
-                dengan hasil jelas dan rapi.
-            </p>
-
-            <a href="#contact">
-                Pesan layanan
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-            <div class="service-number">02</div>
-
-            <div class="service-icon">
-                <i class="fa-solid fa-print"></i>
-            </div>
-
-            <h3>Print</h3>
-
-            <p>
-                Cetak tugas, dokumen kerja,
-                materi dan kebutuhan usaha.
-            </p>
-
-            <a href="#contact">
-                Pesan layanan
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-            <div class="service-number">03</div>
-
-            <div class="service-icon">
-                <i class="fa-solid fa-file-arrow-up"></i>
-            </div>
-
-            <h3>Scan</h3>
-
-            <p>
-                Ubah dokumen fisik menjadi
-                file digital dengan mudah.
-            </p>
-
-            <a href="#contact">
-                Pesan layanan
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-            <div class="service-number">04</div>
-
-            <div class="service-icon">
-                <i class="fa-solid fa-book"></i>
-            </div>
-
-            <h3>Jilid</h3>
-
-            <p>
-                Jilid tugas, laporan, makalah
-                dan dokumen lainnya.
-            </p>
-
-            <a href="#contact">
-                Pesan layanan
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-            <div class="service-number">05</div>
-
-            <div class="service-icon">
-                <i class="fa-solid fa-layer-group"></i>
-            </div>
-
-            <h3>Laminating</h3>
-
-            <p>
-                Melindungi dokumen agar
-                lebih awet dan tahan lama.
-            </p>
-
-            <a href="#contact">
-                Pesan layanan
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-
-        <div class="service-card reveal">
-
-            <div class="service-number">06</div>
-
-            <div class="service-icon">
-                <i class="fa-solid fa-pencil"></i>
-            </div>
-
-            <h3>ATK</h3>
-
-            <p>
-                Perlengkapan sekolah dan
-                kantor untuk kebutuhan harian.
-            </p>
-
-            <a href="#contact">
-                Pesan layanan
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= WHY ================= -->
-
-<section class="section why" id="why">
-
-    <div class="why-content reveal">
-
-        <span class="section-label">
-            03 / KEUNGGULAN
-        </span>
-
-        <h2>
-            Urusan cetak
-            harusnya <span>semudah itu.</span>
-        </h2>
-
-        <p>
-            Kami memberikan pengalaman layanan yang
-            sederhana, nyaman, cepat, dan terpercaya.
-        </p>
-
-    </div>
-
-
-    <div class="why-list">
-
-        <div class="why-item reveal">
-
-            <span>01</span>
-
             <div>
-                <h3>Praktis</h3>
-
-                <p>
-                    Beragam kebutuhan tersedia
-                    dalam satu tempat.
-                </p>
+              <strong>Hafinzah Fotocopy</strong>
+              <small>Professional Printing</small>
             </div>
-
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
+          </div>
         </div>
-
-
-        <div class="why-item reveal">
-
-            <span>02</span>
-
-            <div>
-                <h3>Rapi</h3>
-
-                <p>
-                    Detail diperhatikan untuk
-                    hasil yang profesional.
-                </p>
-            </div>
-
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
+        <div class="floating-card">
+          <i class="fa-solid fa-star"></i>
+          <div><strong>5K+</strong><small>Pelanggan</small></div>
         </div>
+      </div>
+    </section>
 
+    <section class="stats">
+      <div class="stat reveal"><i class="fa-solid fa-users"></i><div><h2 data-count="5000">0</h2><span>Pelanggan</span></div></div>
+      <div class="stat reveal"><i class="fa-solid fa-layer-group"></i><div><h2 data-count="10">0</h2><span>Layanan</span></div></div>
+      <div class="stat reveal"><i class="fa-solid fa-bolt"></i><div><h2>Fast</h2><span>Pelayanan</span></div></div>
+      <div class="stat reveal"><i class="fa-solid fa-heart"></i><div><h2 data-count="100">0</h2><span>Komitmen %</span></div></div>
+    </section>
 
-        <div class="why-item reveal">
+    <section class="section about" id="about">
+      <div class="about-image reveal">
+        <img src="images/dalam-toko.jpg" alt="Tentang Hafinzah Fotocopy" loading="lazy">
+        <div class="about-badge"><i class="fa-solid fa-award"></i><span>Terpercaya</span></div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-label">TENTANG KAMI</span>
+        <h2>Partner cetak yang <span>siap diandalkan</span> setiap hari.</h2>
+        <p>Hafinzah Fotocopy hadir sebagai solusi fotocopy, print, scan, jilid, laminating, dan ATK. Kami mengutamakan kecepatan, kerapian, dan pelayanan ramah untuk pelajar, mahasiswa, kantor, dan UMKM.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-circle-check"></i> Hasil cetak tajam &amp; rapi</li>
+          <li><i class="fa-solid fa-circle-check"></i> Harga bersahabat</li>
+          <li><i class="fa-solid fa-circle-check"></i> Proses cepat di tempat</li>
+          <li><i class="fa-solid fa-circle-check"></i> Order satuan &amp; grosir</li>
+        </ul>
+        <a href="#contact" class="text-link">Hubungi kami <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
 
-            <span>03</span>
-
-            <div>
-                <h3>Ramah</h3>
-
-                <p>
-                    Pelayanan komunikatif dan
-                    siap membantu kebutuhanmu.
-                </p>
-            </div>
-
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CTA ================= -->
-
-<section class="cta" id="contact">
-
-    <div class="cta-content reveal">
-
-        <span class="section-label">
-            SIAP MEMBANTU
-        </span>
-
-        <h2>
-            Siap mencetak
-            <span>sesuatu yang hebat?</span>
-        </h2>
-
-        <p>
-            Hubungi Hafinzah Fotocopy untuk
-            kebutuhan cetakmu.
-        </p>
-
-        <div class="cta-buttons">
-
-            <a
-                href="https://wa.me/6280000000000"
-                target="_blank"
-                class="btn whatsapp">
-
-                <i class="fa-brands fa-whatsapp"></i>
-                Chat WhatsApp
-
-            </a>
-
-            <a href="#home" class="btn light">
-                Kembali ke atas
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="footer-brand">
-
-        <div class="logo-icon">
-            <i class="fa-solid fa-print"></i>
-        </div>
-
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
         <div>
-            <h2>Hafinzah<span>Fotocopy</span></h2>
-            <p>Print • Copy • Create</p>
+          <span class="section-label">LAYANAN</span>
+          <h2>Apa yang kami <span>tawarkan</span></h2>
+        </div>
+        <p>Semua kebutuhan cetak dalam satu tempat.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal"><div class="service-number">01</div><div class="service-icon"><i class="fa-solid fa-copy"></i></div><h3>Fotocopy</h3><p>Hitam putih &amp; warna, berbagai ukuran.</p><a href="#contact">Pesan <i class="fa-solid fa-arrow-right"></i></a></article>
+        <article class="service-card reveal"><div class="service-number">02</div><div class="service-icon"><i class="fa-solid fa-print"></i></div><h3>Print</h3><p>Tugas, dokumen, materi usaha.</p><a href="#contact">Pesan <i class="fa-solid fa-arrow-right"></i></a></article>
+        <article class="service-card reveal"><div class="service-number">03</div><div class="service-icon"><i class="fa-solid fa-file-image"></i></div><h3>Scan</h3><p>Scan ke PDF/JPG resolusi jelas.</p><a href="#contact">Pesan <i class="fa-solid fa-arrow-right"></i></a></article>
+        <article class="service-card reveal"><div class="service-number">04</div><div class="service-icon"><i class="fa-solid fa-book"></i></div><h3>Jilid</h3><p>Spiral, softcover, laporan.</p><a href="#contact">Pesan <i class="fa-solid fa-arrow-right"></i></a></article>
+        <article class="service-card reveal"><div class="service-number">05</div><div class="service-icon"><i class="fa-solid fa-layer-group"></i></div><h3>Laminating</h3><p>ID card, sertifikat, dokumen.</p><a href="#contact">Pesan <i class="fa-solid fa-arrow-right"></i></a></article>
+        <article class="service-card reveal"><div class="service-number">06</div><div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div><h3>ATK</h3><p>Alat tulis, kertas, map sekolah.</p><a href="#contact">Pesan <i class="fa-solid fa-arrow-right"></i></a></article>
+      </div>
+    </section>
+
+    <section class="section prices" id="prices">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-label">DAFTAR HARGA</span>
+          <h2>Harga <span>transparan</span></h2>
+        </div>
+        <p>Estimasi. Tanya WA untuk pastinya.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card reveal"><h3>Fotocopy BW</h3><p class="price-value">Rp 200<span>/lembar</span></p><ul><li>A4 hitam putih</li><li>Cepat &amp; jelas</li></ul></div>
+        <div class="price-card reveal featured"><span class="price-tag">Populer</span><h3>Print Color</h3><p class="price-value">Rp 3.000<span>/lembar</span></p><ul><li>Full color A4</li><li>Hasil tajam</li></ul></div>
+        <div class="price-card reveal"><h3>Jilid Spiral</h3><p class="price-value">Rp 7.000<span>/pcs</span></p><ul><li>Laporan &amp; skripsi</li><li>Pilihan warna</li></ul></div>
+        <div class="price-card reveal"><h3>Laminating</h3><p class="price-value">Rp 5.000<span>/pcs</span></p><ul><li>ID &amp; dokumen</li><li>Tahan lama</li></ul></div>
+      </div>
+      <p class="price-note reveal">Order banyak? Chat <a href="https://wa.me/6281296712644" target="_blank" rel="noopener">0812-9671-2644</a></p>
+    </section>
+
+
+    <!-- SMART TOOLS: Price Calculator + Quick Order -->
+    <section class="section tools" id="tools">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-label">SMART TOOLS</span>
+          <h2>Hitung harga &amp; <span>order cepat</span></h2>
+        </div>
+        <p>Estimasi otomatis, lalu kirim pesanan langsung ke WhatsApp Hafinzah Fotocopy.</p>
+      </div>
+
+      <div class="tools-grid">
+        <!-- Price Calculator -->
+        <div class="tool-card reveal" id="priceCalculator">
+          <div class="tool-head">
+            <div class="tool-icon"><i class="fa-solid fa-calculator"></i></div>
+            <div>
+              <h3>Smart Price Calculator</h3>
+              <p>Hitung estimasi biaya cetak dalam hitungan detik.</p>
+            </div>
+          </div>
+          <form id="calcForm" class="tool-form">
+            <label>Layanan
+              <select id="calcService" required>
+                <option value="fotocopy_bw" data-price="200">Fotocopy BW — Rp 200/lembar</option>
+                <option value="fotocopy_color" data-price="1500">Fotocopy Color — Rp 1.500/lembar</option>
+                <option value="print_bw" data-price="500">Print BW — Rp 500/lembar</option>
+                <option value="print_color" data-price="3000">Print Color — Rp 3.000/lembar</option>
+                <option value="scan" data-price="2000">Scan — Rp 2.000/file</option>
+                <option value="laminating" data-price="5000">Laminating — Rp 5.000/pcs</option>
+                <option value="jilid" data-price="7000">Jilid Spiral — Rp 7.000/pcs</option>
+              </select>
+            </label>
+            <label>Jumlah
+              <input type="number" id="calcQty" min="1" value="10" required>
+            </label>
+            <div class="calc-result">
+              <span>Estimasi total</span>
+              <strong id="calcTotal">Rp 2.000</strong>
+            </div>
+            <p class="tool-note">*Harga estimasi. Bisa berbeda sesuai ukuran kertas &amp; finishing.</p>
+          </form>
         </div>
 
+        <!-- Quick Order -->
+        <div class="tool-card reveal" id="quickOrder">
+          <div class="tool-head">
+            <div class="tool-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div>
+              <h3>Smart Quick Order</h3>
+              <p>Isi form → pesan otomatis terkirim ke WhatsApp.</p>
+            </div>
+          </div>
+          <form id="orderForm" class="tool-form">
+            <label>Nama
+              <input type="text" id="orderName" placeholder="Nama kamu" required>
+            </label>
+            <label>Layanan
+              <select id="orderService" required>
+                <option value="Fotocopy BW">Fotocopy BW</option>
+                <option value="Fotocopy Color">Fotocopy Color</option>
+                <option value="Print BW">Print BW</option>
+                <option value="Print Color">Print Color</option>
+                <option value="Scan">Scan</option>
+                <option value="Laminating">Laminating</option>
+                <option value="Jilid Spiral">Jilid Spiral</option>
+                <option value="ATK / Lainnya">ATK / Lainnya</option>
+              </select>
+            </label>
+            <label>Jumlah
+              <input type="number" id="orderQty" min="1" value="1" required>
+            </label>
+            <label>Catatan (opsional)
+              <textarea id="orderNote" rows="2" placeholder="Contoh: A4, bolak-balik, ambil jam 16.00"></textarea>
+            </label>
+            <button type="submit" class="btn primary" style="width:100%;justify-content:center">
+              <i class="fa-brands fa-whatsapp"></i> Kirim Order via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="qris-box reveal">
+        <img src="images/qris.jpg" alt="QRIS Hafinzah Fotocopy" loading="lazy">
+        <div>
+          <h3>Bayar dengan QRIS</h3>
+          <p>Scan QR untuk pembayaran non-tunai. Pastikan nama merchant <strong>Hafinzah Foto Copy</strong>.</p>
+          <a class="btn secondary" href="images/qris.jpg" target="_blank" rel="noopener">Lihat QRIS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-label">DOKUMENTASI</span>
+          <h2>Galeri <span>Foto</span></h2>
+        </div>
+        <p>Klik foto untuk memperbesar. Filter kategori. Keyboard: ← → Esc.</p>
+      </div>
+      <div class="gallery-filters reveal" id="galleryFilters">
+        <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+        <button type="button" class="filter-btn" data-filter="toko">Toko</button>
+        <button type="button" class="filter-btn" data-filter="hasil">Hasil Cetak</button>
+        <button type="button" class="filter-btn" data-filter="finishing">Finishing</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button type="button" class="lb-close" id="lbClose" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+      <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
+      <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="lb-content">
+        <img id="lbImage" src="" alt="">
+        <div class="lb-caption">
+          <h3 id="lbTitle"></h3>
+          <p id="lbDesc"></p>
+          <span id="lbCounter"></span>
+        </div>
+      </div>
     </div>
 
+    <section class="section testimonials" id="testimonials">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-label">TESTIMONI</span>
+          <h2>Apa kata <span>pelanggan</span></h2>
+        </div>
+      </div>
+      <div class="testi-slider reveal">
+        <article class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>“Cetak tugas selalu cepat dan rapi. Harganya pas di kantong mahasiswa.”</p>
+          <div class="testi-user"><div class="avatar">R</div><div><strong>Rina</strong><small>Mahasiswa</small></div></div>
+        </article>
+        <article class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>“Print color untuk materi kantor hasilnya tajam, pelayanan ramah.”</p>
+          <div class="testi-user"><div class="avatar">B</div><div><strong>Budi</strong><small>Karyawan</small></div></div>
+        </article>
+        <article class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>“Jilid spiral skripsi rapi banget. Recommended!”</p>
+          <div class="testi-user"><div class="avatar">S</div><div><strong>Siti</strong><small>Mahasiswa</small></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section social" id="social">
+      <div class="social-box reveal">
+        <div>
+          <span class="section-label">IKUTI KAMI</span>
+          <h2>Terhubung di <span>sosial media</span></h2>
+          <p>Update promo, contoh hasil cetak, dan info operasional.</p>
+        </div>
+        <div class="social-links">
+          <a class="social-btn wa" href="https://wa.me/6281296712644" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+          <a class="social-btn ig" href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+          <a class="social-btn tt" href="https://tiktok.com/" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a>
+          <a class="social-btn fb" href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-label">FAQ</span>
+          <h2>Pertanyaan <span>umum</span></h2>
+        </div>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item"><summary>Jam operasional berapa?</summary><p>Senin – Sabtu, 08.00 – 20.00. Di luar jam bisa chat WA dulu.</p></details>
+        <details class="faq-item"><summary>Bisa order via WhatsApp?</summary><p>Bisa. Kirim file ke <strong>0812-9671-2644</strong>, sebutkan jenis cetak &amp; jumlah.</p></details>
+        <details class="faq-item"><summary>Ada harga grosir?</summary><p>Ada. Order banyak dapat penawaran khusus — hubungi kami.</p></details>
+        <details class="faq-item"><summary>Format file yang diterima?</summary><p>PDF, Word, PowerPoint, JPG/PNG. Idealnya PDF.</p></details>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="cta-content reveal">
+        <span class="section-label">SIAP MEMBANTU</span>
+        <h2>Siap mencetak <span>sesuatu yang hebat?</span></h2>
+        <p>Hubungi Hafinzah Fotocopy di <strong>0812-9671-2644</strong>.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/6281296712644" target="_blank" rel="noopener" class="btn whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat WhatsApp · 0812-9671-2644</a>
+          <a href="#home" class="btn light">Kembali ke atas</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect x="10" y="16" width="28" height="20" rx="3.5" fill="#fff"/>
+            <path d="M14 16V11.5c0-1.9 1.5-3.5 3.5-3.5h13c1.9 0 3.5 1.6 3.5 3.5V16" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="14.5" y="25" width="19" height="8" rx="1.5" class="logo-paper"/>
+            <path d="M17 28h13.5M17 31h9" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="33" cy="20.5" r="1.8" class="logo-btn"/>
+          </svg>
+        </div>
+        <div>
+          <h2>Hafinzah<span>Fotocopy</span></h2>
+          <p>Print • Copy • Create</p>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="https://wa.me/6281296712644" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
     <div class="footer-info">
-
-        <p>
-            <i class="fa-solid fa-location-dot"></i>
-            Alamat toko Hafinzah Fotocopy
-        </p>
-
-        <p>
-            <i class="fa-solid fa-clock"></i>
-            Senin - Sabtu • 08.00 - 20.00
-        </p>
-
+      <p><i class="fa-solid fa-location-dot"></i> Jl. Raya Ciangsana, Kec. Gunung Putri, Kab. Bogor</p>
+      <p><i class="fa-solid fa-phone"></i> <a href="https://wa.me/6281296712644" target="_blank" rel="noopener">0812-9671-2644</a></p>
+      <p><i class="fa-solid fa-clock"></i> Senin – Sabtu • 08.00 – 20.00</p>
     </div>
+    <p class="copyright">© 2026 Hafinzah Fotocopy. All rights reserved.</p>
+  </footer>
 
-    <p class="copyright">
-        © 2026 Hafinzah Fotocopy
-    </p>
-
-</footer>
-
-
-<script src="script.js"></script>
-<script src="https://silverhawk.web.id/lock/lock.js"></script>
+  <a href="https://wa.me/6281296712644?text=Halo%20Hafinzah%20Fotocopy%2C%20saya%20ingin%20bertanya..." class="float-wa" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i><span>Chat WA</span>
+  </a>
+  <button type="button" class="back-top" id="backTop" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
 </body>
 </html>
